@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio</title>
+    <link rel="stylesheet" href="./output.css">
+</head>
+<body>
+    <nav class="bg-fondoblanco">
+        <div class=" max-w-7xl px-2 sm:px-6 lg:px-8">
+          <div class="relative flex h-16 items-center justify-between">
+            <div class="absolute inset-y-0 left-0 flex items-center sm:hidden">
+              <!-- Mobile menu button-->
+              <button type="button" class="relative inline-flex items-center justify-center rounded-md p-2 text-gray-400 hover:bg-gray-700 hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white" aria-controls="mobile-menu" aria-expanded="false">
+                <span class="absolute -inset-0.5"></span>
+                <span class="sr-only">Open main menu</span>
+                <!--
+                  Icon when menu is closed.
+      
+                  Menu open: "hidden", Menu closed: "block"
+                -->
+                <svg class="block h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                </svg>
+                <!--
+                  Icon when menu is open.
+      
+                  Menu open: "block", Menu closed: "hidden"
+                -->
+                <svg class="hidden h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+                </svg>
+              </button>
+            </div>
+            <div class="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start">
+              <div class="flex flex-shrink-0 items-center">
+                
+               <a href="./index.html"> <img class="h-10 w-auto" src="./img/logo.png" alt="imagen de logo"> </a>
+              </div>
+              <div class="hidden sm:ml-6 sm:block">
+                <div class="flex space-x-4">
+                  <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
+                  <a href="./index.html" class="text-colorlet-farmapp hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium">Inicio</a>
+                  <a href="./quienesomos.html" class="text-colorlet-farmap hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium">Quienes somos</a>
+                  <a href="#" class="text-colorlet-farmap hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium">Contacto</a>
+                  <a href="#" class="text-colorlet-farmap hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium">Preguntas</a>
+                </div>
+              </div>
+            </div>
+                <!--
+                  Dropdown menu, show/hide based on menu state.
+      
+                  Entering: "transition ease-out duration-100"
+                    From: "transform opacity-0 scale-95"
+                    To: "transform opacity-100 scale-100"
+                  Leaving: "transition ease-in duration-75"
+                    From: "transform opacity-100 scale-100"
+                    To: "transform opacity-0 scale-95"
+                -->
+               
+              </div>
+            </div>
+          </div>
+        </div>
+      
+        <!-- Mobile menu, show/hide based on menu state. -->
+        <div class="sm:hidden" id="mobile-menu">
+          <div class="space-y-1 px-2 pb-3 pt-2">
+            <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
+            <a href="./index.html" class="bg-gray-900 text-white block rounded-md px-3 py-2 text-base font-medium" aria-current="page">Inicio</a>
+            <a href="./quienesomos.html" class="text-gray-300 hover:bg-gray-700 hover:text-white block rounded-md px-3 py-2 text-base font-medium">Quienes somos</a>
+            <a href="#" class="text-gray-300 hover:bg-gray-700 hover:text-white block rounded-md px-3 py-2 text-base font-medium">Contacto</a>
+            <a href="#" class="text-gray-300 hover:bg-gray-700 hover:text-white block rounded-md px-3 py-2 text-base font-medium">Preguntas</a>
+          </div>
+        </div>
+      </nav>
+
+      <!--                                                             PASAMOS A LA SECCION  DE INICIO         -->
+      <!-- Mobile menu, show/hide based on menu open state. -->
+    <div class="lg:hidden" role="dialog" aria-modal="true">
+        <!-- Background backdrop, show/hide based on slide-over state. -->
+        <div class="fixed inset-0 z-50"></div>
+        <div class="fixed inset-y-0 right-0 z-50 w-full overflow-y-auto bg-white px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
+          <div class="flex items-center justify-between">
+            <a href="#" class="-m-1.5 p-1.5">
+              <span class="sr-only">Your Company</span>
+              <img class="h-8 w-auto" src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=600" alt="">
+            </a>
+            <button type="button" class="-m-2.5 rounded-md p-2.5 text-gray-700">
+              <span class="sr-only">Close menu</span>
+              <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+              </svg>
+            </button>
+          </div>
+          <div class="mt-6 flow-root">
+            <div class="-my-6 divide-y divide-gray-500/10">
+              <div class="space-y-2 py-6">
+                <a href="#" class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">Product</a>
+                <a href="#" class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">Features</a>
+                <a href="#" class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">Marketplace</a>
+                <a href="#" class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">Company</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+      <!--                          LOGO DE FARMAPP                                      -->
+
+
+        <div class="flex flex-row justify-center items-center w-full h-full">
+            <div class="w-[45%]">
+                <p class="w-96">masldmkasdaksndlkasndkasndlkasndklasfklashfklashfnkaslhflashfakslfhlakshflkashfklashflakshflsahfasklfhaskfhaklshflasfhkashflaskhfa
+                    masldmkasdaksndlkasndkasndlkasndklasfklashfklashfnkaslhflashfakslfhlakshflkashfklashflakshflsahfasklfhaskfhaklshflasfhkashflaskhfa
+                    masldmkasdaksndlkasndkasndlkasndklasfklashfklashfnkaslhflashfakslfhlakshflkashfklashflakshflsahfasklfhaskfhaklshflasfhkashflaskhfa
+                    masldmkasdaksndlkasndkasndlkasndklasfklashfklashfnkaslhflashfakslfhlakshflkashfklashflakshflsahfasklfhaskfhaklshflasfhkashflaskhfa
+                    masldmkasdaksndlkasndkasndlkasndklasfklashfklashfnkaslhflashfakslfhlakshflkashfklashflakshflsahfasklfhaskfhaklshflasfhkashflaskhfa
+                    masldmkasdaksndlkasndkasndlkasndklasfklashfklashfnkaslhflashfakslfhlakshflkashfklashflakshflsahfasklfhaskfhaklshflasfhkashflaskhfa
+                    masldmkasdaksndlkasndkasndlkasndklasfklashfklashfnkaslhflashfakslfhlakshflkashfklashflakshflsahfasklfhaskfhaklshflasfhkashflaskhfa
+                    masldmkasdaksndlkasndkasndlkasndklasfklashfklashfnkaslhflashfakslfhlakshflkashfklashflakshflsahfasklfhaskfhaklshflasfhkashflaskhfa
+                    masldmkasdaksndlkasndkasndlkasndklasfklashfklashfnkaslhflashfakslfhlakshflkashfklashflakshflsahfasklfhaskfhaklshflasfhkashflaskhfa
+                    masldmkasdaksndlkasndkasndlkasndklasfklashfklashfnkaslhflashfakslfhlakshflkashfklashflakshflsahfasklfhaskfhaklshflasfhkashflaskhfa
+
+                </p>
+            </div>
+            <div class="w-1/2 flex flex-col items-center justify-center">
+                <img class="w-48 h-36" src="./img/ioma.jpg" alt="">
+                <img class="w-48 h-24" src="./img/pami.png" alt="">
+                <img class="w-48 h-36" src="./img/osde.png" alt="">
+            </div>
+        </div>
+ 
+
+                                         <!--                           FOOTER                          -->
+
+  
+
+<footer class="bg-white dark:bg-gray-900 w-full max-w-screen-xl py">
+      <div class="sm:flex sm:items-end sm:justify-between">
+          <span class="text-sm text-gray-500 sm:text-center dark:text-gray-400">© Copyright 2023. Todos los derechos reservados | Farmapp S.A 
+          </span>
+      </div>
+</footer>
+
+</body>
+</html>

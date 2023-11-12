@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quienes somos</title>
+    <link rel="stylesheet" href="./output.css">
+</head>
+<body>
+    <nav class="bg-fondoblanco">
+        <div class=" max-w-7xl px-2 sm:px-6 lg:px-8">
+          <div class="relative flex h-16 items-center justify-between">
+            <div class="absolute inset-y-0 left-0 flex items-center sm:hidden">
+              <!-- Botón de menú móvil-->
+              <button type="button" class="relative inline-flex items-center justify-center rounded-md p-2 text-gray-400 hover:bg-gray-700 hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white" aria-controls="mobile-menu" aria-expanded="false">
+                <span class="absolute -inset-0.5"></span>
+                <span class="sr-only">Open main menu</span>
+                <!--
+                 Icono cuando el menú está cerrado. Menú abierto: "oculto", Menú cerrado: "bloquear"
+                -->
+                <svg class="block h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                </svg>
+                <!--
+                 Icono cuando el menú está abierto. Menú abierto: "bloquear", Menú cerrado: "oculto"
+                -->
+                <svg class="hidden h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+                </svg>
+              </button>
+            </div>
+            <div class="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start">
+              <div class="flex flex-shrink-0 items-center">
+                <a href="./index.html"> <img class="h-10 w-auto" src="./img/logo.png" alt="imagen de logo"> </a>
+              </div>
+              <div class="hidden sm:ml-6 sm:block">
+                <div class="flex space-x-4">
+                  <!-- Actual: "bg-gray-900 text-white", Predeterminado: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
+                  <a href="./index.html" class="text-colorlet-farmapp hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium">Inicio</a>
+                  <a href="./quienesomos.html" class="text-colorlet-farmap hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium">Quienes somos</a>
+                  <a href="#" class="text-colorlet-farmap hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium">Contacto</a>
+                  <a href="#" class="text-colorlet-farmap hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium">Preguntas</a>
+                </div>
+              </div>
+            </div>
+                <!--
+                Menú desplegable, mostrar/ocultar según el estado del menú. Ingresando: "transformación facilitar la duración-100" Desde: "transformar opacidad-0 escala-95" A: "transformar opacidad-100 escala-100" Saliendo: "transición facilitar la duración-75" Desde: "transformar opacidad- 100 escala-100" Para: "transformar opacidad-0 escala-95"
+                -->
+               
+              </div>
+            </div>
+          </div>
+        </div>
+      
+        <!-- Mobile menu, show/hide based on menu state. -->
+        <div class="sm:hidden" id="mobile-menu">
+          <div class="space-y-1 px-2 pb-3 pt-2">
+            <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
+            <a href="./index.html" class="bg-gray-900 text-white block rounded-md px-3 py-2 text-base font-medium" aria-current="page">Inicio</a>
+            <a href="./quienesomos.html" class="text-gray-300 hover:bg-gray-700 hover:text-white block rounded-md px-3 py-2 text-base font-medium">Quienes somos</a>
+            <a href="#" class="text-gray-300 hover:bg-gray-700 hover:text-white block rounded-md px-3 py-2 text-base font-medium">Contacto</a>
+            <a href="#" class="text-gray-300 hover:bg-gray-700 hover:text-white block rounded-md px-3 py-2 text-base font-medium">Preguntas</a>
+          </div>
+        </div>
+      </nav>
+
+      <!--                 PASAMOS A LA SECCION  DE INICIO         -->
+      <!-- Menú móvil, mostrar/ocultar según el estado de apertura del menú. -->
+    <div class="lg:hidden" role="dialog" aria-modal="true">
+        <!-- Fondo de fondo, mostrar/ocultar según el estado de deslizamiento. -->
+        <div class="fixed inset-0 z-50"></div>
+        <div class="fixed inset-y-0 right-0 z-50 w-full overflow-y-auto bg-white px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
+          <div class="flex items-center justify-between">
+            <a href="#" class="-m-1.5 p-1.5">
+              <span class="sr-only">Your Company</span>
+              <img class="h-12 w-auto" src="./img/logo.png" alt="">
+            </a>
+            <button type="button" class="-m-2.5 rounded-md p-2.5 text-gray-700">
+              <span class="sr-only">Close menu</span>
+              <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+              </svg>
+            </button>
+          </div>
+ <!--                          MENU CELULAR                                   -->
+
+          <div class="mt-6 flow-root">
+            <div class="-my-6 divide-y divide-gray-500/10">
+              <div class="space-y-2 py-6">
+                <a href="#" class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">Inicio</a>
+                <a href="#" class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">Quienes somos</a>
+                <a href="#" class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">Contacto</a>
+                <a href="#" class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">Preguntas</a>
+              </div>             
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+      <!--                          LOGO DE FARMAPP                                      -->    
+    <div class="relative isolate px-6 py-6 pt-14 lg:px-8 bg-background-farmapp">     
+      <div class="mx-auto max-w-2xl py-32 sm:py-48 lg:py-64">      
+      <div class="flex flex-col justify-center items-center">
+      <img class="h-40 w-auto" src="./img/logo-inicio.png" alt="">
+
+            <!--                           PONEMOS EL INPUT INGRESAR LOCALIDAD                                   -->
+<div>
+    <div class="relative mt-2 rounded-md shadow-sm">
+      <div class="pointer-events-none absolute inset-y-0 left-0 flex items-center pl-3">
+        
+      </div>
+      <input type="text" name="price" id="price" placeholder= "Ingresar localidad"     class="  text-center  block w-full rounded-md border-0 py-1.5 pl-7 pr-20 text-gray-900 ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6" >
+      <div class="absolute inset-y-0 right-0 flex items-center">
+        <label for="currency" class="sr-only">Currency</label>
+      </div>
+    </div>
+  </div>
+           <!--                           PONEMOS EL INPUT DNI                                        -->
+
+  <div class="relative mt-2 rounded-md shadow-sm">
+    <div class="pointer-events-none absolute inset-y-0 left-0 flex items-center pl-3">    
+  </div>
+    <input type="text" name="price" id="price" placeholder="Ingresar DNI" class="  text-center  block w-full rounded-md border-0 py-1.5 pl-7 pr-20 text-gray-900 ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6">
+    <div class="absolute inset-y-0 right-0 flex items-center">
+      <label for="currency" class="sr-only">Currency</label>
+    </div>
+  </div>
+</div>
+</div>
+</div>
+      <div class="absolute inset-x-0 top-[calc(100%-13rem)] -z-10 transform-gpu overflow-hidden blur-3xl sm:top-[calc(100%-30rem)]" aria-hidden="true">
+      
+      </div>
+    </div>
+  </div>
+      
+
+                                         <!--                           FOOTER                          -->
+
+  
+
+<footer class="bg-white dark:bg-gray-900 w-full max-w-screen-xl py">
+      <div class="sm:flex sm:items-end sm:justify-between">
+          <span class="text-sm text-gray-500 sm:text-center dark:text-gray-400">© Copyright 2023. Todos los derechos reservados | Farmapp S.A 
+          </span>
+      </div>
+</footer>
+
+</body>
+</html>
